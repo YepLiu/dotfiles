@@ -1,0 +1,23 @@
+[filter "lfs"]
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+
+[user]
+    name = YepLiu
+    email = liuye0803@gmail.com
+
+[init]
+    defaultBranch = main
+
+[alias]
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    rs = restore
+    us = restore --staged
