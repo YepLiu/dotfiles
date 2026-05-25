@@ -50,3 +50,5 @@ unset __mamba_setup
 # <<< mamba initialize <<<
 export HF_HOME=/data/ye/huggingface
 export TORCH_HOME=/data/ye/torch
+export EDITOR=nvim
+
